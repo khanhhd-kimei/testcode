@@ -4743,6 +4743,19 @@
                 <externally-defined-flag>false</externally-defined-flag>
                 <min-length>0</min-length>
             </attribute-definition>
+            <attribute-definition attribute-id="model_id_2">
+                <display-name xml:lang="x-default">Season Code</display-name>
+                <description xml:lang="x-default">海外の”品番コード”</description>
+                <type>string</type>
+                <localizable-flag>true</localizable-flag>
+                <site-specific-flag>false</site-specific-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <visible-flag>false</visible-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <order-required-flag>false</order-required-flag>
+                <externally-defined-flag>false</externally-defined-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
         </custom-attribute-definitions>
         <group-definitions>
             <attribute-group group-id="ExternalSearch">
@@ -4856,6 +4869,7 @@
                 <attribute attribute-id="product_commentary_image_title"/>
                 <attribute attribute-id="images_descriptions"/>
                 <attribute attribute-id="product_orderby"/>
+                <attribute attribute-id="model_id_2"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
@@ -7873,6 +7887,72 @@
             </attribute-definition>
             <attribute-definition attribute-id="sevenElevenFlg">
                 <display-name xml:lang="x-default">セブンイレブン</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="general">
+                <display-name xml:lang="x-default">General</display-name>
+                <attribute attribute-id="id"/>
+                <attribute attribute-id="enableFlg"/>
+                <attribute attribute-id="sevenElevenFlg"/>
+                <attribute attribute-id="familyMartFlg"/>
+                <attribute attribute-id="lawsonFlg"/>
+                <attribute attribute-id="circleKSunkusFlg"/>
+                <attribute attribute-id="ministopFlg"/>
+                <attribute attribute-id="seicomartFlg"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+
+    <custom-type type-id="Yamato_Cvs_Custom">
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>site</storage-scope>
+        <key-definition attribute-id="id">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <attribute-definitions>
+            <attribute-definition attribute-id="circleKSunkusFlg">
+                <display-name xml:lang="x-default">サークルＫサンクス</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="enableFlg">
+                <display-name xml:lang="x-default">有効フラグ</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="familyMartFlg">
+                <display-name xml:lang="x-default">ファミリーマート</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="seicomartFlg">
+                <display-name xml:lang="x-default">セイコーマート</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="sevenElevenFlg">
+                <display-name xml:lang="x-default">セブンイレブン</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="lawsonFlg">
+                <display-name xml:lang="x-default">ローソン</display-name>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="lawsonFlgTest">
+                <display-name xml:lang="x-default">ローソン</display-name>
                 <type>boolean</type>
                 <mandatory-flag>false</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
