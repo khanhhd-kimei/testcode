@@ -6458,18 +6458,9 @@
                 <display-name xml:lang="x-default">Country Code Value</display-name>
                 <description xml:lang="x-default">Country Code Value - for the form values</description>
                 <type>string</type>
-                <localizable-flag>false</localizable-flag>
-                <mandatory-flag>false</mandatory-flag>
-                <externally-managed-flag>false</externally-managed-flag>
-                <min-length>0</min-length>
-            </attribute-definition>
-            <attribute-definition attribute-id="inventoryListId">
-                <display-name xml:lang="x-default">Store Inventory List ID</display-name>
-                <description xml:lang="x-default">Store Inventory List ID</description>
-                <type>string</type>
-                <localizable-flag>false</localizable-flag>
-                <mandatory-flag>false</mandatory-flag>
-                <externally-managed-flag>false</externally-managed-flag>
+                <localizable-flag>true</localizable-flag>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>true</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
         </custom-attribute-definitions>
@@ -6505,9 +6496,10 @@
                 <attribute attribute-id="image" system="true"/>
                 <attribute attribute-id="posEnabled" system="true"/>
             </attribute-group>
-            <attribute-group group-id="Inventory">
-                <display-name xml:lang="x-default">Inventory</display-name>
-                <attribute attribute-id="inventoryListId"/>
+            <attribute-group group-id="Details2">
+                <display-name xml:lang="x-default">Store Details</display-name>
+                <attribute attribute-id="storeHours" system="true"/>
+                <attribute attribute-id="posEnabled" system="true"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
